@@ -663,8 +663,17 @@ function shareInstagram(e){
   if(navigator.share){
     navigator.share({ title: document.title, text: document.title, url: url }).catch(function(){});
   } else {
+    var igMsgs = {
+      en:"Link copied — open Instagram and paste it into your story, profile, or a message.",
+      fr:"Lien copié — ouvrez Instagram et collez-le dans votre story, votre profil ou un message.",
+      de:"Link kopiert — öffne Instagram und füge ihn in deine Story, dein Profil oder eine Nachricht ein.",
+      es:"Enlace copiado — abre Instagram y pégalo en tu historia, perfil o un mensaje.",
+      it:"Link copiato — apri Instagram e incollalo nella tua storia, nel profilo o in un messaggio.",
+      pt:"Link copiado — abra o Instagram e cole na sua story, no perfil ou em uma mensagem."
+    };
+    var igLang = (document.documentElement.getAttribute('lang') || 'en').slice(0,2);
     if(navigator.clipboard && navigator.clipboard.writeText){ navigator.clipboard.writeText(url).catch(function(){}); }
-    alert('Link copied — open Instagram and paste it into your story, profile, or a message.');
+    alert(igMsgs[igLang] || igMsgs.en);
     window.open('https://www.instagram.com/', '_blank', 'noopener');
   }
   return false;
