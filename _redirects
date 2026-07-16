@@ -1,0 +1,17 @@
+# Clean URLs: 301 .html -> extensionless
+/about.html  /about  301!
+/am-i-israelite.html  /am-i-israelite  301!
+/are-the-british-the-lost-tribes.html  /are-the-british-the-lost-tribes  301!
+/british-israelism.html  /british-israelism  301!
+/contact-thanks.html  /contact-thanks  301!
+/contact.html  /contact  301!
+/cookies.html  /cookies  301!
+/dna-consent.html  /dna-consent  301!
+/faq.html  /faq  301!
+/guides.html  /guides  301!
+/how-it-works.html  /how-it-works  301!
+/israelite-dna-test.html  /israelite-dna-test  301!
+/lost-tribes-of-israel.html  /lost-tribes-of-israel  301!
+/privacy.html  /privacy  301!
+/stone-of-scone-jacobs-pillow.html  /stone-of-scone-jacobs-pillow  301!
+/terms.html  /terms  301!
