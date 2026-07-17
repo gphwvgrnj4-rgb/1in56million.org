@@ -397,3 +397,15 @@ footer.site img.mini-logo:hover{transform:scale(1.09); opacity:1;}
 .welsh-card .heb{font-size:1.5rem; color:var(--terracotta); line-height:1.2;}
 .welsh-card .note{font-size:0.85rem; color:var(--muted);}
 .disclaimer-note{font-size:0.9rem; color:var(--muted); font-style:italic; border-left:3px solid var(--gold); padding-left:1rem; margin-top:1.5rem;}
+
+
+/* ---------- LANGUAGE SWITCHER v2: visible + compact on mobile ---------- */
+.nav-langs{display:none !important;}
+.lang-btn .ln-code{display:none;}
+@media (max-width:760px){
+  .lang-switcher{display:flex !important; flex-wrap:nowrap; overflow-x:auto; -webkit-overflow-scrolling:touch;
+    justify-content:center; gap:0.25rem; padding:0.45rem 0.5rem;}
+  .lang-btn{flex:0 0 auto; padding:0.32rem 0.6rem; font-size:0.76rem; letter-spacing:0.05em;}
+  .lang-btn .ln-full{display:none;}
+  .lang-btn .ln-code{display:inline;}
+}
