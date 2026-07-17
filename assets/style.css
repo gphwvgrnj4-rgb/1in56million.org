@@ -357,3 +357,16 @@ footer.site img.mini-logo:hover{transform:scale(1.09); opacity:1;}
 .guide-body{display:block; padding:1.05rem 1.2rem 1.25rem;}
 /* narrow figure (vector diagrams) */
 .article-figure.figure-narrow img{max-height:420px; width:auto;}
+
+
+/* ---------- CONSENT LINE (text flows as one block, not per-word) ---------- */
+.consent{align-items:flex-start;}
+.consent input{flex:0 0 auto;}
+.consent-txt{flex:1 1 auto; line-height:1.5; font-size:0.9rem; color:var(--ink-soft);}
+.consent-txt a{color:var(--terracotta); text-decoration:underline;}
+
+/* ---------- LANGUAGE SWITCHER — responsive for 6 languages ---------- */
+@media (max-width:600px){
+  .lang-switcher{flex-wrap:wrap; gap:0.3rem; padding:0.5rem 0.6rem;}
+  .lang-btn{font-size:0.68rem; padding:0.32rem 0.55rem; letter-spacing:0.03em;}
+}
