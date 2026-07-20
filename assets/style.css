@@ -412,3 +412,21 @@ footer.site img.mini-logo:hover{transform:scale(1.09); opacity:1;}
 
 /* language-switcher globe icon */
 .lang-switcher .globe{color:var(--gold); flex:0 0 auto; align-self:center; margin-inline-end:.3rem;}
+
+/* language dropdown toggle */
+.langpick{position:relative; display:inline-flex;}
+.langpick-btn{display:inline-flex; align-items:center; gap:.35rem; cursor:pointer; background:transparent; border:1px solid rgba(201,163,78,.5); border-radius:8px; padding:.32rem .55rem; color:var(--cream); font-family:'IBM Plex Mono',monospace; line-height:1;}
+.langpick-btn:hover{border-color:var(--gold);}
+.langpick-btn .globe{color:var(--gold); flex:0 0 auto;}
+.langpick-cur{font-size:.75rem; font-weight:600; letter-spacing:.04em; text-transform:uppercase;}
+.langpick-caret{font-size:.55rem; opacity:.7; transition:transform .15s ease;}
+.langpick.open .langpick-caret{transform:rotate(180deg);}
+.langpick-menu{display:none; position:absolute; top:calc(100% + 6px); inset-inline-end:0; z-index:80; flex-direction:column; min-width:150px; background:var(--teal); border:1px solid var(--gold); border-radius:8px; padding:.3rem; box-shadow:0 12px 30px rgba(0,0,0,.35);}
+.langpick.open .langpick-menu{display:flex;}
+.langpick-menu a{display:block; margin:0; padding:.55rem .7rem; border:0; border-radius:5px; color:var(--cream); text-decoration:none; font-family:'IBM Plex Mono',monospace; font-size:.8rem; font-weight:600; letter-spacing:.03em; opacity:.85; white-space:nowrap; text-align:start; text-transform:none;}
+.langpick-menu a:hover{opacity:1; background:rgba(255,255,255,.08);}
+.langpick-menu a.active,.langpick-menu a[aria-current]{opacity:1; background:var(--gold); color:var(--ink);}
+.langpick-menu .ln-code{display:none;}
+.langpick-menu .ln-full{display:inline;}
+/* collapse the 1in56 full-width switcher bar to just hold the toggle */
+.lang-switcher{overflow:visible !important; justify-content:flex-end !important;}

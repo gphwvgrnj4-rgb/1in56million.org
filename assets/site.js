@@ -24,3 +24,17 @@
     els.forEach(function (el) { io.observe(el); });
   }
 })();
+
+/* language dropdown toggle */
+(function(){
+  function closeAll(except){
+    var open=document.querySelectorAll('.langpick.open');
+    for(var i=0;i<open.length;i++){ if(open[i]!==except){ open[i].classList.remove('open'); var b=open[i].querySelector('.langpick-btn'); if(b)b.setAttribute('aria-expanded','false'); } }
+  }
+  document.addEventListener('click',function(e){
+    var btn=e.target.closest?e.target.closest('.langpick-btn'):null;
+    if(btn){ e.preventDefault(); var pick=btn.closest('.langpick'); var willOpen=!pick.classList.contains('open'); closeAll(pick); pick.classList.toggle('open',willOpen); btn.setAttribute('aria-expanded',willOpen?'true':'false'); return; }
+    if(!(e.target.closest&&e.target.closest('.langpick-menu'))) closeAll(null);
+  });
+  document.addEventListener('keydown',function(e){ if(e.key==='Escape'||e.keyCode===27) closeAll(null); });
+})();
