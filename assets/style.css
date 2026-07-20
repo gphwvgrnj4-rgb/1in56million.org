@@ -430,3 +430,12 @@ footer.site img.mini-logo:hover{transform:scale(1.09); opacity:1;}
 .langpick-menu .ln-full{display:inline;}
 /* collapse the 1in56 full-width switcher bar to just hold the toggle */
 .lang-switcher{overflow:visible !important; justify-content:flex-end !important;}
+
+/* related-sites network band */
+.network{background:var(--cream-soft); border-top:1px solid var(--line); padding:2.6rem 1.5rem;}
+.network .wrap{max-width:var(--maxw); margin:0 auto; text-align:center;}
+.network h2{font-family:'IBM Plex Mono',monospace; text-transform:uppercase; letter-spacing:.1em; font-size:.9rem; color:var(--teal-deep); margin:0 0 1.1rem;}
+.network-links{display:flex; flex-wrap:wrap; justify-content:center; gap:.6rem 1.4rem;}
+.network-links a{color:var(--terracotta); font-weight:600; text-decoration:none; font-size:.98rem;}
+.network-links a:hover{text-decoration:underline;}
+[dir="rtl"] .network h2{letter-spacing:0;}
