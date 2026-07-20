@@ -409,3 +409,6 @@ footer.site img.mini-logo:hover{transform:scale(1.09); opacity:1;}
   .lang-btn .ln-full{display:none;}
   .lang-btn .ln-code{display:inline;}
 }
+
+/* language-switcher globe icon */
+.lang-switcher .globe{color:var(--gold); flex:0 0 auto; align-self:center; margin-inline-end:.3rem;}
