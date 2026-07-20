@@ -37,4 +37,7 @@
     if(!(e.target.closest&&e.target.closest('.langpick-menu'))) closeAll(null);
   });
   document.addEventListener('keydown',function(e){ if(e.key==='Escape'||e.keyCode===27) closeAll(null); });
+
+/* YouTube facade: load the real player only on click */
+document.addEventListener('click',function(e){var b=e.target.closest&&e.target.closest('.yt-facade');if(!b)return;var id=b.getAttribute('data-yt');var w=b.parentNode;w.innerHTML='<iframe src="https://www.youtube-nocookie.com/embed/'+id+'?autoplay=1" title="Tea Tephi and the Lost Tribes" allow="autoplay; encrypted-media; fullscreen" allowfullscreen referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;inset:0;width:100%;height:100%;border:0"></iframe>';});
 })();

@@ -3,8 +3,6 @@
    Design concept preserved from original; refined + extended.
    ========================================================= */
 
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;0,900;1,500&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Mono:wght@500;600&family=Noto+Sans+Hebrew:wght@400;600;700&display=swap');
-
 :root{
   --cream: #EEF1F6;
   --cream-dark: #DCE2EC;
@@ -439,3 +437,11 @@ footer.site img.mini-logo:hover{transform:scale(1.09); opacity:1;}
 .network-links a{color:var(--terracotta); font-weight:600; text-decoration:none; font-size:.98rem;}
 .network-links a:hover{text-decoration:underline;}
 [dir="rtl"] .network h2{letter-spacing:0;}
+
+/* YouTube click-to-load facade */
+.yt-facade{position:absolute;inset:0;width:100%;height:100%;border:0;padding:0;margin:0;cursor:pointer;background:#000;display:block;overflow:hidden}
+.yt-facade img{width:100%;height:100%;object-fit:cover;opacity:.85;transition:opacity .2s}
+.yt-facade:hover img{opacity:1}
+.yt-facade .yt-play{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:68px;height:48px;background:rgba(0,0,0,.62);border-radius:12px;transition:background .2s}
+.yt-facade:hover .yt-play{background:#c0392b}
+.yt-facade .yt-play::after{content:'';position:absolute;top:50%;left:53%;transform:translate(-50%,-50%);border-style:solid;border-width:11px 0 11px 19px;border-color:transparent transparent transparent #fff}
