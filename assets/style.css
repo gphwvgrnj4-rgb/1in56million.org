@@ -453,7 +453,8 @@ footer.site img.mini-logo:hover{transform:scale(1.09); opacity:1;}
 .share .sh:hover{background:var(--gold);color:var(--ink);border-color:var(--gold);transform:translateY(-2px)}
 .share .sh.copied{background:var(--gold);color:var(--ink);border-color:var(--gold)}
 
-/* featured-on-X link */
-.x-feature{display:inline-flex;align-items:center;gap:.4rem;color:var(--gold);text-decoration:none;font-family:'IBM Plex Mono',monospace;font-size:.78rem;font-weight:600;letter-spacing:.03em;margin:.4rem auto .1rem;opacity:.9;transition:opacity .15s}
-.x-feature:hover{opacity:1;text-decoration:underline}
-.x-feature svg{width:14px;height:14px;fill:currentColor}
+
+/* embedded X post (home) */
+.x-embed{padding:2.6rem 1rem 1.4rem;background:var(--cream-soft);border-top:1px solid var(--line)}
+.x-embed .wrap{max-width:560px;margin:0 auto;display:flex;justify-content:center}
+.x-embed .twitter-tweet{margin:0 auto!important}
