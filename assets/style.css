@@ -454,7 +454,10 @@ footer.site img.mini-logo:hover{transform:scale(1.09); opacity:1;}
 .share .sh.copied{background:var(--gold);color:var(--ink);border-color:var(--gold)}
 
 
-/* embedded X post (home) */
-.x-embed{padding:2.6rem 1rem 1.4rem;background:var(--cream-soft);border-top:1px solid var(--line)}
-.x-embed .wrap{max-width:560px;margin:0 auto;display:flex;justify-content:center}
-.x-embed .twitter-tweet{margin:0 auto!important}
+
+/* tribes section: text + embedded X post */
+.history-split .wrap{max-width:var(--maxw);display:grid;grid-template-columns:1.05fr .95fr;gap:2rem;align-items:start}
+.history-split .hs-text{min-width:0}
+.history-split .hs-tweet{min-width:0;display:flex;justify-content:center}
+.history-split .hs-tweet .twitter-tweet{margin:0 auto!important;max-width:100%}
+@media (max-width:760px){.history-split .wrap{grid-template-columns:1fr;gap:1.4rem}}
